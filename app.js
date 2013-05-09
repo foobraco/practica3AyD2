@@ -36,12 +36,6 @@ app.get('/charge_card', function(req, res){
 			cards[c].amount -= 1.25;
 		}
 	}
-
- 	for(var c in cards){
-		if(cards[c].id === parseFloat(req.query.id)){	
-			console.log(cards[c]);
-		}
-	}
   res.send('Transaction Succesful');
 });
 
